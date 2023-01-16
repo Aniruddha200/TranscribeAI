@@ -11,6 +11,8 @@
 		A181710929752A2700C71060 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A181710829752A2700C71060 /* ContentView.swift */; };
 		A181710B29752A2800C71060 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A181710A29752A2800C71060 /* Assets.xcassets */; };
 		A181710F29752A2800C71060 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A181710E29752A2800C71060 /* Preview Assets.xcassets */; };
+		A181711629752E0C00C71060 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A181711529752E0C00C71060 /* LoginPage.swift */; };
+		A181711929752F6400C71060 /* TranscribePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A181711829752F6400C71060 /* TranscribePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		A181710A29752A2800C71060 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A181710C29752A2800C71060 /* TranscribeAI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TranscribeAI.entitlements; sourceTree = "<group>"; };
 		A181710E29752A2800C71060 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A181711529752E0C00C71060 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		A181711829752F6400C71060 /* TranscribePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscribePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,8 @@
 		A181710529752A2700C71060 /* TranscribeAI */ = {
 			isa = PBXGroup;
 			children = (
+				A181711729752E2900C71060 /* View */,
 				A181710629752A2700C71060 /* TranscribeAIApp.swift */,
-				A181710829752A2700C71060 /* ContentView.swift */,
 				A181710A29752A2800C71060 /* Assets.xcassets */,
 				A181710C29752A2800C71060 /* TranscribeAI.entitlements */,
 				A181710D29752A2800C71060 /* Preview Content */,
@@ -67,6 +71,16 @@
 				A181710E29752A2800C71060 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A181711729752E2900C71060 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A181711529752E0C00C71060 /* LoginPage.swift */,
+				A181710829752A2700C71060 /* ContentView.swift */,
+				A181711829752F6400C71060 /* TranscribePage.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A181710929752A2700C71060 /* ContentView.swift in Sources */,
+				A181711929752F6400C71060 /* TranscribePage.swift in Sources */,
+				A181711629752E0C00C71060 /* LoginPage.swift in Sources */,
 				A181710729752A2700C71060 /* TranscribeAIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +285,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs access to microphone for audio recording.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -307,6 +324,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs access to microphone for audio recording.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
